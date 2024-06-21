@@ -1,0 +1,10 @@
+{
+    "types": [
+        "task",
+        "meet",
+        "deploy",
+        "todo",
+        "other"
+    ],
+    "file": "work.log"
+}

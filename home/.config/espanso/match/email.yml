@@ -1,0 +1,10 @@
+matches:
+  - trigger: "@gm"
+    replace: "@gmail.com"
+    word: true
+  - trigger: "@si"
+    replace: "@sideup.com"
+    word: true
+  - trigger: "@ou"
+    replace: "@outlook.com"
+    word: true

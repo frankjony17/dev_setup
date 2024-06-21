@@ -1,0 +1,6 @@
+matches:
+  - trigger: :euro
+    replace: "\u20ac"
+  - trigger: :pound
+    replace: "\u00a3"
+
