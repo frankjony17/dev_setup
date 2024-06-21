@@ -1,4 +1,4 @@
-# DevSetup
+# dev_setup
 
 This repository contains my configuration files, along with scripts, settings, and small tools that enhance my productivity on a daily basis.
 
@@ -23,7 +23,7 @@ This project is a work in progress and will always have room for improvement.
 
 Keep the following in mind if you wish to use or extend it:
 
-	•	Changes can affect multiple files, which may cause some confusion
-	•	There is no parallelism in the execution of scripts
-	•	The script may be interrupted when requesting sudo permissions at certain steps
-	•	There is no upgrade option, only reinstallation
+    •	Changes can affect multiple files, which may cause some confusion
+    •	There is no parallelism in the execution of scripts
+    •	The script may be interrupted when requesting sudo permissions at certain steps
+    •	There is no upgrade option, only reinstallation

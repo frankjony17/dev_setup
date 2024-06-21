@@ -1,8 +1,8 @@
 #!/bin/zsh
 
 # Global variables
-export DEVSETUP_DIR="$HOME/devsetup"
-export DEVSETUP_SHELL="$HOME/devsetup/shell"
+export DEVSETUP_DIR="$HOME/dev_setup"
+export DEVSETUP_SHELL="$HOME/dev_setup/shell"
 
 # Nix configuration
 if [ -e "$HOME/.nix-profile/etc/profile.d/nix.sh" ]; then
@@ -10,4 +10,4 @@ if [ -e "$HOME/.nix-profile/etc/profile.d/nix.sh" ]; then
 fi
 
 # Add global scripts to path
-export PATH="$HOME/devsetup/bin:$PATH"
+export PATH="$HOME/dev_setup/bin:$PATH"

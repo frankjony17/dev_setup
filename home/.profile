@@ -1,8 +1,7 @@
 #!/bin/sh
 
 # Add global scripts to path
-export PATH="$HOME/devsetup/bin:$PATH"
-
+export PATH="$HOME/dev_setup/bin:$PATH"
 
 if [ "$(uname)" = "Linux" ]; then
     if [ -d "$HOME/.nix-profile/share" ]; then

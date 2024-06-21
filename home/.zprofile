@@ -1,4 +1,4 @@
 #!/bin/zsh
 
 # Add global scripts to path
-export PATH="$HOME/devsetup/bin:$PATH"
+export PATH="$HOME/dev_setup/bin:$PATH"
