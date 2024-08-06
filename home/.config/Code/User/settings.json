@@ -46,7 +46,6 @@
   "python.createEnvironment.trigger": "off",
   "ai-commit.OPENAI_BASE_URL": "https://api.openai.com/v1",
   "ai-commit.EMOJI_ENABLED": false,
-
   "editor.fontSize": 16,
   "git.ignoreRebaseWarning": true,
   "explorer.confirmDelete": false,
