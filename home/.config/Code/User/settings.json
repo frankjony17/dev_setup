@@ -4,52 +4,79 @@
     "dist",
     "node_modules"
   ],
-  "workbench.iconTheme": "seti",
+  "workbench.iconTheme": "material-icon-theme",
   "editor.stickyScroll.enabled": true,
   "editor.unicodeHighlight.nonBasicASCII": false,
   "editor.fontFamily": "'Monaspace Neon', monospace",
   "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'calt', 'dlig'",
-  "editor.rulers": [
-    80,
-    120
-  ],
+  "editor.rulers": [99, 99],
   "git.autofetch": true,
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
   "git.mergeEditor": true,
   "git.pruneOnFetch": true,
   "git.rebaseWhenSync": true,
-  "githubPullRequests.pullBranch": "never",
   "cSpell.userWords": [
+    "autouse",
     "camelcase",
     "cmds",
     "discoverability",
     "disinformed",
     "fastify",
     "LENGHT",
+    "loguru",
     "openapi",
     "powerd6",
+    "pydantic",
+    "sessionmanager",
+    "sqlalchemy",
     "taskfile"
   ],
   "workbench.colorTheme": "Dark Purple - Webstorm",
   "redhat.telemetry.enabled": false,
-  "liveshare.guestApprovalRequired": true,
-  "liveshare.showInStatusBar": "whileCollaborating",
   "cSpell.diagnosticLevel": "Warning",
-  "errorLens.delay": 1000,
-  "errorLens.enabledDiagnosticLevels": [
-    "error",
-    "warning"
-  ],
-  "errorLens.enabled": false,
-  "editor.formatOnSave": true,
+
   "search.useIgnoreFiles": true,
   "search.useGlobalIgnoreFiles": true,
-  "codemetrics.basics.DecorationModeEnabled": false,
   "diffEditor.ignoreTrimWhitespace": false,
   "github.copilot.chat.localeOverride": "en",
   "git.allowNoVerifyCommit": true,
-  "powershell.promptToUpdatePowerShell": false,
   "debug.javascript.autoAttachFilter": "disabled",
-  "typescript.updateImportsOnFileMove.enabled": "always"
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "python.createEnvironment.trigger": "off",
+  "ai-commit.OPENAI_BASE_URL": "https://api.openai.com/v1",
+  "ai-commit.EMOJI_ENABLED": false,
+  "ai-commit.OPENAI_API_KEY": "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",
+  "editor.fontSize": 16,
+  "git.ignoreRebaseWarning": true,
+  "explorer.confirmDelete": false,
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.mypy_cache": true
+  },
+  "pythonIndent.keepHangingBracketOnLine": true,
+  "pythonIndent.trimLinesWithOnlyWhitespace": true,
+  "pythonIndent.useTabOnHangingIndent": true,
+  "editor.wordWrap": "on",
+
+  "editor.formatOnSave": true,
+  "files.autoSave": "onFocusChange",
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit"
+    },
+    "diffEditor.ignoreTrimWhitespace": true
+  },
+  "ruff.configuration": "pyproject.toml",
+  "ruff.organizeImports": true,
+  "ruff.fixAll": true,
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "workbench.editorAssociations": {
+    "*.pdf": "default"
+  }
 }

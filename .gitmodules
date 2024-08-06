@@ -10,3 +10,6 @@
 [submodule "shell/plugins/almostontop"]
 	path = shell/plugins/almostontop
 	url = https://github.com/Valiev/almostontop.git
+[submodule "shell/plugins/zsh-completions"]
+	path = shell/plugins/zsh-completions
+	url = https://github.com/zsh-users/zsh-completions.git

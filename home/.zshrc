@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 # Golang
-export PATH="$PATH:$(go env GOROOT)/bin:$(go env GOPATH)/bin"
+export PATH="$PATH:$(go env GOROOT)/bin:$(go env GOPATH)/bin:/opt/homebrew/bin"
 
 # shellcheck source=../bin/source_recursive.sh
 . "$HOME/dev_setup/bin/source_recursive.sh"
@@ -16,7 +16,8 @@ source_recursive "$DEVSETUP_DIR/shell/aliases"
 # ZSH Plugins
 source "$DEVSETUP_DIR/shell/plugins/almostontop/almostontop.plugin.zsh"
 source "$DEVSETUP_DIR/shell/plugins/zsh-alias-finder/zsh-alias-finder.plugin.zsh"
-source "$DEVSETUP_DIR/shell/plugins/zsh-bd/bd.plugin.zsh"
+source "$DEVSETUP_DIR/shell/plugins/zsh-completions/zsh-completions.plugin.zsh"
+# source "$DEVSETUP_DIR/shell/plugins/zsh-bd/bd.plugin.zsh"
 
 # History
 export HISTFILE=~/.zsh_history
@@ -44,3 +45,8 @@ setopt autopushd
 
 # Prompt initialization
 eval "$(starship init zsh)"
+
+# Pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
