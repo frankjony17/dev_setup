@@ -18,3 +18,23 @@ gcl() {
     info "Listing local branches that do not have a remote"
     git branch --no-merged | awk '{print $1}'
 }
+
+monorepo() {
+    info "Starting..."
+    cd ~/WorkDev
+    info "Deleting local composer-monorepo directory if exists"
+    rm -rf composer-monorepo
+    info "Cloning composer-monorepo repository"
+    git clone git@github.com:onne-place/composer-monorepo.git
+    cd composer-monorepo
+    info "Updating composer-monorepo repository:"
+    info "Switching to develop branch"
+    git switch develop
+    info "Creating .env file"
+    cp .env-sample .env
+    info "Updating submodules"
+    make git_update
+    info "Fetching latest changes between develop and stage"
+    make git_latest_stage
+    info "Finished..."
+}
