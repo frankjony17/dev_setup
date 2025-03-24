@@ -35,6 +35,6 @@ monorepo() {
     info "Updating submodules"
     make git_update
     info "Fetching latest changes between develop and stage"
-    make git_latest_stage
+    make git_latest
     info "Finished..."
 }
